@@ -1,17 +1,3 @@
-// let valor_total = prompt('Ingresar el monto total a pagar: ')
-// let cant_cuotas = prompt('Ingrese la cantidad de cuotas que quiere pagar: ')
-
-// document.write(`El valor total de`)
-
-
-// class prenda{
-//     constructor(nombre,valor,stock){
-//         this.nombre = nombre
-//         this.valor = valor
-//         this.stock = stock         
-//     }
-// }
-
 let remera = document.getElementById('remera')
 let short = document.getElementById('short')
 let camiseta = document.getElementById('camiseta')
