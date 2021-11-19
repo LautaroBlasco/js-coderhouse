@@ -1,0 +1,28 @@
+.form-usuario{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.productos{
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-img-top{
+    height: 250px;
+    overflow: hidden;
+    place-content: center;
+}
+
+.botones{
+    margin: 5% 25% 0 25%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton-submit, .boton-mostrar{
+    width: 45%;
+}
