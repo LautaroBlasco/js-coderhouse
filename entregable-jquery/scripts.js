@@ -161,13 +161,14 @@ $(() => {
         $('#catalogo').addClass('dark-mode-catalogo')
         $('#curvas-catalogo').addClass('black-mode-curvas-catalogo')
         $('#main').addClass('dark-mode-main')
+        $('#main-usuario').addClass('main-usuario')
     }else{
         $('#boton-light-mode').hide()
         $('#clientes').removeClass('dark-mode-clientes')
         $('#catalogo').removeClass('dark-mode-catalogo')
         $('#curvas-catalogo').removeClass('black-mode-curvas-catalogo')
         $('#main').removeClass('dark-mode-main')
-
+        $('#main-usuario').removeClass('main-usuario')
     }
 
     $('#boton-dark-mode').on('click', () => {
@@ -193,4 +194,18 @@ $(() => {
         $('#main-usuario').removeClass('main-usuario')
     })
 
+})
+
+// Animaciones de jquery para que desaparezca el botón de los catálogos
+
+$('.boton_card_menu').click(function(){
+    $('.boton_card_menu').animate({
+        opacity: "0%"
+    },{
+    duration: 1500,
+    easing: "linear",
+    complete: () => {
+        console.log('ya vamos a tener menu :(')
+    }
+})
 })

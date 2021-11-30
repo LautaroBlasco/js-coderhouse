@@ -471,3 +471,8 @@ html, body{
     color: white;
 }
 
+.texto-no-disponible{
+    z-index: 10;
+    position: absolute;
+    top: 0%;
+}
