@@ -51,6 +51,11 @@ html, body{
     margin: 0;
 }
 
+.lista-secciones > li > a{
+    text-decoration: none;
+    color: black;
+}
+
 
 .lista-secciones li{
     margin: 0 30px;
@@ -66,6 +71,12 @@ html, body{
 
 .opciones-usuario li{
     margin: 0 30px;
+}
+
+.opciones-usuario button{
+    background: none;
+    border: none;
+    font-size: x-large;
 }
 
 .opciones-usuario{
@@ -142,6 +153,11 @@ html, body{
     display: flex;
     justify-content: space-around;
 }
+
+
+
+/* Sección clientes */
+
 
 .clientes{
     height: 100vh;
@@ -388,3 +404,70 @@ html, body{
     content: hidden;
     transition: 1s;
 }
+
+
+
+
+/* ================================================ */
+/* Estilos de la página de usuario */
+/* ================================================ */
+
+
+.main-usuario{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(78, 78, 78);
+}
+
+.formUsuario{
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    height: 60vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(145, 152, 195);
+    border-radius: 4px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.contraseña_errada{
+    background-color: rgb(251, 113, 113) !important;
+}
+
+.contrasenias_distintas{
+    content: normal;
+}
+
+
+
+
+
+/* ============================================================ */
+/* Clases del DARK MODE */
+
+.dark-mode-clientes{
+    background-color: rgb(78, 78, 78);
+}
+
+.dark-mode-catalogo{
+    background-color: rgb(47, 49, 63);
+}
+
+.black-mode-curvas-catalogo{
+    fill: rgb(47, 49, 63);
+}
+
+.dark-mode-main{
+    background-color: rgb(78, 78, 78);
+}
+
+.dark-mode.navbar-alternativa{
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
+
