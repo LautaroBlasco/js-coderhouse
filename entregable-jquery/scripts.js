@@ -111,7 +111,7 @@ let listaUsuarios = []
 let formUsuario = document.getElementById('formUsuario')
 $('#contrasenias_distintas').hide()
 
-if ((window.location.pathname == 'http://127.0.0.1:5500/entregable-jquery/usuario.html')) {
+if ((window.location.pathname == '/entregable-jquery/usuario.html')) {
   formUsuario.addEventListener('submit', (e) => {
     e.preventDefault()
     let datosFormulario = new FormData(e.target)
@@ -127,6 +127,7 @@ if ((window.location.pathname == 'http://127.0.0.1:5500/entregable-jquery/usuari
       $('#contrasenias_distintas').hide();
       $('#contrasenia').removeClass('contraseña_errada');
       $('#confirmacionContrasenia').removeClass('contraseña_errada');
+      formUsuario.reset()
     } else {
       // Propiedades estéticas de la página
       $('#contrasenia').addClass('contraseña_errada');
